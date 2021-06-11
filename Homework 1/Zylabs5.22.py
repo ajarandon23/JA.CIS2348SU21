@@ -23,7 +23,7 @@ elif service1 == "Car wax":
     first_service_cost = 12
 elif service1 == "-":
     service1 = "No service"
-    first_service_cost = 0
+    first_service_cost = 'No service'
 
 if service2 == "Oil change":
     second_service_cost = 35
@@ -35,10 +35,18 @@ elif service2 == "Car wax":
     second_service_cost = 12
 elif service2 == "-":
     service2 = "No service"
-    second_service_cost = 0
+    second_service_cost = 'No service'
 
 
 print("\nDavy's auto shop invoice")
-print("\nService 1: " + service1 + ", $" + str(first_service_cost))
-print("Service 2: " + service2 + ", $" + str(second_service_cost))
+if service1 == "No service":
+    print("\nService 1: " + service1)
+elif service1:
+    print("\nService 1: " + service1 + ", $" + str(first_service_cost))
+
+if service2 == "No service":
+    print("Service 2: " + service2)
+elif service2:
+    print("Service 2: " + service2 + ", $" + str(second_service_cost))
+
 print("\nTotal: $" + str(first_service_cost + second_service_cost))
