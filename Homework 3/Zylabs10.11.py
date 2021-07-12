@@ -35,7 +35,7 @@ if __name__ == "__main__":
 
     food_item1.food_info()
 
-print('Number of calories for {:.2f} serving(s): {:.2f}'.format(num_servings, food_item1.calc_calories(num_servings)))
-print()
-food_item2.food_info()
-print('Number of calories for {:.2f} serving(s): {:.2f}'.format(num_servings, food_item2.calc_calories(num_servings)))
+    print('Number of calories for {:.2f} serving(s): {:.2f}'.format(num_servings, food_item1.calc_calories(num_servings)))
+    print()
+    food_item2.food_info()
+    print('Number of calories for {:.2f} serving(s): {:.2f}'.format(num_servings, food_item2.calc_calories(num_servings)))

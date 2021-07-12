@@ -1,15 +1,16 @@
 # Jarandon Adams - 1812590
 # Zylabs 12.9
 
-parts = input().split()
-name = parts[0]
-while name != '-1':
+program = input().split()
+first_name = program[0]
+
+while first_name != '-1':
     try:
-        age = int(parts[1]) + 1
+        age = int(program[1]) + 1
     except ValueError:
         age = 0
-    print('{} {}'.format(name, age))
 
-    parts = input().split()
-    name = parts[0]
+    print('{} {}'.format(first_name, age))
 
+    program = input().split()
+    first_name = program[0]

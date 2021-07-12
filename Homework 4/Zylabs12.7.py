@@ -10,7 +10,7 @@ def get_age():
 
 
 def fat_burning_heart_rate(age):
-    return (70 / 100) * (220 - age)
+    return 0.7 * (220 - age)  # calculates the fat-burning heart rate
 
 
 if __name__ == '__main__':
@@ -18,6 +18,6 @@ if __name__ == '__main__':
         age = get_age()
         print("Fat burning heart rate for a", age, "year-old:", fat_burning_heart_rate(age), "bpm")
 
-    except ValueError as ve:
-        print(ve.args[0])
-        print("Could not calculate heart rate info.")
+    except ValueError as value:
+        print(value.args[0])
+        print("Could not calculate heart rate info.\n")
